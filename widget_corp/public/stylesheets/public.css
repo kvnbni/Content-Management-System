@@ -1,0 +1,86 @@
+/* Site Colors:
+  #1A446C - blue grey
+  #689DC1 - light blue
+  #D4E6F4 - very light blue
+  #F5F5DC - beige
+  #8D0D19 - burgundy
+*/
+
+html{height:100%; width:100%;}
+body
+{
+	width:100%; height:100%;
+	margin:0; padding:0; border:0; /* padding is used to generate space around the content */
+	font-family: Pangolin;
+	font-size: 13px;  line-height:15px;
+	background: #F5F5DC;
+}
+
+img {border: none;}
+a {color: #8D0D19;}   /*We use a to style links in a webpage*/
+a:hover {color: #1A446C;} /* Link changes color when we hover over it */
+
+#header
+{
+	height:90px;
+	margin:0; padding:0; text-align:left;
+	background: #1A446C; color: #D4E6F4;
+}
+#header h1
+{
+	padding:1em; margin:0;  /*em is a unit like px*/
+}
+#main 
+{ 
+	height: 600px; width: 100%; 
+	margin: 0; padding: 0; 
+}
+#footer 
+{ 
+	clear: both;       /* Cursor not allowed to float over the copyright symbol */
+	height: 3em; margin: 0; padding: 1em; 
+	text-align: center; 
+	background: #1A446C;  color: #D4E6F4;
+}
+#navigation 
+{ 
+	float: left;
+	width: 150px; height: 100%; 
+	margin: 0; padding: 2em; 
+	color: #D4E6F4; background: #8D0D19;
+}
+#navigation a { color: #D4E6F4; text-decoration: none; }  /*text decoration involves underlining and overlining the text etc*/
+#navigation a:hover { color: #FFFFFF; }
+ul.subjects  /* ul.subjects or ul.whatever_wewanttonameit just specifies the unordered list*/
+{ 
+	margin: 1em; padding-left: 0; list-style: none;
+}
+ul.pages { padding-left: 2em; list-style: square; font-weight:normal; }
+.selected { font-weight: bold; }  
+
+/* Page Content */
+#page 
+{ 
+	float: left; height: 100%;
+	padding-left: 2em; vertical-align: top;  /*padding-left is the indent of the text from the red edge of the site*/
+	background: #F5F5DC;
+}
+#page h2 { color: #8D0D19; margin-top: 1em;}
+#page h3 { color: #8D0D19; }
+div.message
+{
+		border:2px solid #8D0D19;
+		color:#8D0D19; font-weight:bold;
+		margin:1em;  padding:1 em;
+}
+.view-content
+{
+	border:1px solid #999; margin:1em; padding:1em;
+}
+.error
+{
+	color: #8D0D19; border:2px  #8D0D19;
+	margin:1em 0;   padding:1 em;
+}
+.error ul{padding-left:2em;}
+
